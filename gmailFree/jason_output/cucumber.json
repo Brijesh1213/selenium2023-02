@@ -1,0 +1,79 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "Free Gmail test scenario",
+        "description": "",
+        "id": "free-gmail-login-feature;free-gmail-test-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4906579800,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User is already on Login Page",
+            "match": {
+              "location": "LoginStepdefination.user_already_On_loginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6113100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "title of login page is Gmail",
+            "match": {
+              "location": "LoginStepdefination.Login_Title()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 65644000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User Enter UserName And User Click on Next",
+            "match": {
+              "location": "LoginStepdefination.add_userName_ClickNext()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3003689100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Enter Password And User click on Next",
+            "match": {
+              "location": "LoginStepdefination.add_Password_ClickNext()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "User is on Home page",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Free Gmail Login feature",
+    "description": "",
+    "id": "free-gmail-login-feature",
+    "keyword": "Feature",
+    "uri": "login.feature"
+  }
+]

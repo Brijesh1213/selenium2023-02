@@ -1,0 +1,16 @@
+package tests;
+
+public class ArrayTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+String tools="Selenium";
+System.out.println(tools);
+String tool[]= {"Selenium", "Java","TestLink","TestNg"};
+System.out.println(tool.length());
+
+
+
+}
+
+}

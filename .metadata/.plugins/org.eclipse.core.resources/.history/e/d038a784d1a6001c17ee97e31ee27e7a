@@ -1,0 +1,22 @@
+package selenium;
+
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class ScreenShotTest {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.gecko.driver", "C:\\Seleniumjars\\geckodriver.exe");
+		FirefoxDriver driver = new FirefoxDriver();
+		
+		driver.get("https://pages.ebay.ca/sitemap.html");
+		File scrFile = driver.getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(scrFile, new File("C:/testing/Screenshot1.jpg"));
+	}
+
+}

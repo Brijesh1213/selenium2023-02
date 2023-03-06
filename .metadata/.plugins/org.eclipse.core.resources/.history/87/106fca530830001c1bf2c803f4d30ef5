@@ -1,0 +1,18 @@
+package selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class JavaScriptExecuterClassTest {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.gecko.driver", "C:\\Seleniumjars\\geckodriver.exe");
+		FirefoxDriver driver = new FirefoxDriver();
+		driver.get("https://www.adidas.ca/en");
+		Thread.sleep(2000);
+		
+		driver.findElement(By.linkText("Careers")).click();
+	}
+
+}

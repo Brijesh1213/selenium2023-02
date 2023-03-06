@@ -1,0 +1,22 @@
+package tests;
+
+public class Test1 {
+ static Test1 t1 = new Test1();
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+System.out.println("I am in msin method");
+PrintMe();
+ScanMe();
+t1.PaintMe();
+	}
+	public static void PrintMe() {
+		System.out.println("printme");
+	}
+	public static void ScanMe() {
+		System.out.println("SCanme");
+	}
+	public void PaintMe()
+{
+		System.out.println("paint me");
+}
+}

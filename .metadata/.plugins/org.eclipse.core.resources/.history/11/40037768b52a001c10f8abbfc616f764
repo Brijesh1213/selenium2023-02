@@ -1,0 +1,29 @@
+package selenium;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class RedioButtonTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.gecko.driver", "C:\\Seleniumjars\\geckodriver.exe");
+		FirefoxDriver driver = new FirefoxDriver();
+		
+		driver.get("https://echoecho.com/htmlforms10.htm");
+		List<WebElement> a = driver.findElements(By.xpath("//td[@class='table5']/input"));
+		String q="Cheese";
+			
+		for (WebElement p:a) {
+			if (p.getAttribute("value").equals(q)) {
+			System.out.println(p.getAttribute("value"));
+			
+			break;	
+			}
+		}
+	
+	}
+}

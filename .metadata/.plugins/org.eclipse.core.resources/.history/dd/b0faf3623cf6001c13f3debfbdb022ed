@@ -1,0 +1,50 @@
+package java1;
+
+public class NumberPalindrom {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		int num =1221;
+		int cnt = 0;
+		int mun = num;
+		int un=num;
+		int flag =0;
+		while(num!=0) {
+		
+		num =num/10;
+		cnt++;
+		}
+		
+		while(mun!=0) {
+			
+			while(cnt!=0) {
+				
+			int x = (int) Math.pow(10, (cnt-1));
+			
+				int y =(un-(un-x))/x;
+				System.out.println(un);
+				//System.out.println(cnt);  1221-(1221-1000)
+			//System.out.println(y);
+				//System.out.println(mun%10);
+				un=(un-((un%x)*x));
+				cnt= cnt-1;
+				mun = mun/10;
+				
+				if( y!= mun%10) {
+			flag=1;
+			break;
+		                       }
+			}
+			
+		}
+		if(flag==0) {
+			System.out.println("its palindrom");
+		}
+		else {
+			System.out.println("its not palindrom");
+		}
+	}
+
+}

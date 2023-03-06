@@ -1,0 +1,18 @@
+package selenium;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class PopUpTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.gecko.driver", "C:\\Seleniumjars\\geckodriver.exe");
+		FirefoxDriver driver = new FirefoxDriver();
+		driver.get("https://www.aliexpress.com/");
+		
+		
+		// remove pop upse and search computer
+		// if no pop up ups run and search computer
+	}
+
+}

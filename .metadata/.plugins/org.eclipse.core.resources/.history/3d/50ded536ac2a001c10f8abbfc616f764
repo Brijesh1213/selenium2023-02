@@ -1,0 +1,31 @@
+package selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class GmailLoginTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//wrong email inspect line poped up
+		
+		System.setProperty("webdriver.gecko.driver", "C:\\Seleniumjars\\geckodriver.exe");
+		FirefoxDriver driver = new FirefoxDriver();
+		
+		driver.get("https://www.google.com/intl/en-GB/gmail/about/");
+		driver.findElement(By.linkText("Sign in")).click();
+		driver.findElement(By.id("identifierId")).sendKeys("hjehbvrervrov");
+		
+		String h= driver.findElement(By.xpath("//div[@class='o6cuMc']")).getText();
+		String a = "Couldn't find your Google Account";
+		if (h.equals(a)) {
+			System.out.println("pass");
+			
+		}else {
+			System.out.println("fail");
+		}
+		
+		
+	}
+
+}

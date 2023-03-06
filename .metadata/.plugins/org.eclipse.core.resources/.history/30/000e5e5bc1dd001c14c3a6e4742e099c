@@ -1,0 +1,41 @@
+package NEW;
+
+import org.apache.commons.lang3.RandomStringUtils;
+
+public class DocumentCounter {
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 DocumentNameCreator d1 = null ;
+		 
+		c.getAndIncrement();
+		d1.getNewDocumentName();
+		
+	}
+    public class Counter {
+        int count = 0;
+        int increment;
+        public void Counter(int increment) {
+            this.increment = increment;
+        }
+
+        public int getAndIncrement() {
+            this.count += this.increment;
+            return this.count;
+        }}
+
+    public class DocumentNameCreator {
+         String prefix;
+         Counter counter;
+        public DocumentNameCreator(String prefix) {
+            super();
+            this.prefix = prefix;
+        }
+
+        public String getNewDocumentName() {
+            return prefix +counter. getAndIncrement();
+        }
+    }
+}
+

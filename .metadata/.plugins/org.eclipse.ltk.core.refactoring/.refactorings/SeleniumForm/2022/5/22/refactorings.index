@@ -1,0 +1,15 @@
+1653395799353	Delete element
+1653395802345	Delete element
+1653397841796	Rename package 'com.qa.base'
+1653397860403	Rename package 'com.qa.feature'
+1653397880848	Rename package 'com.qa.pages'
+1653397898347	Rename package 'com.qa.runner'
+1653397913429	Rename package 'com.qa.Stepdefination'
+1653397928863	Rename package 'com.qa.util'
+1653397969547	Rename resource 'FB.feature'
+1653398163976	Move file
+1653398167222	Delete element
+1653398171228	Delete element
+1653398601615	Rename type 'LoginPage'
+1653398624086	Delete element
+1653405034761	Rename type 'LoginPageSteps'

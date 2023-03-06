@@ -1,0 +1,28 @@
+package Utils;
+
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelUtils {
+	
+	public static void main(String[] args) {
+		getrowCount();
+	}
+	
+	public static void getrowCount() {
+		
+		try {
+			
+			String projectDir = System.getProperty("user.dir");
+			System.out.println(projectDir);
+			String excelPath= "./data/TestData.xlsx";
+			XSSFWorkbook work = new XSSFWorkbook(excelPath);
+		} catch (Exception exp) {
+			System.out.println(exp.getMessage());
+			System.out.println(exp.getCause());
+			exp.printStackTrace();
+		}
+	}
+
+}

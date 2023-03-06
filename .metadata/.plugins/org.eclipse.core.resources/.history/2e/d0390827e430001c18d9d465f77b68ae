@@ -1,0 +1,29 @@
+package selenium;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class AmazonHeader {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.gecko.driver","C:\\Seleniumjars\\geckodriver.exe\\");
+		FirefoxDriver  driver=new FirefoxDriver();
+		
+		driver.get("https://www.amazon.ca/");
+		Thread.sleep(2000);
+		List<WebElement> header = driver.findElements(By.xpath("//div[@id='nav-xshop']/a"));
+		System.out.println(header.size());
+		for (WebElement List : header) {
+			System.out.println(List.getText());
+			if (List.getText().equals("Computers")) {
+				break;}
+		
+			}
+	}
+	}
+
+

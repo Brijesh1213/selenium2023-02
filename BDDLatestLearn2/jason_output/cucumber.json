@@ -1,0 +1,97 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-04T19:37:00.406Z",
+        "line": 3,
+        "name": "We are opening three webistes",
+        "description": "",
+        "id": "open-three-websites;we-are-opening-three-webistes",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2643340100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "We are opening Facebook",
+            "match": {
+              "location": "steps.StepDefination.we_are_opening_facebook()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4184110400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Facebook titleF",
+            "match": {
+              "location": "steps.StepDefination.getting_titleF()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10409749800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "We are opening Amazon",
+            "match": {
+              "location": "steps.StepDefination.we_are_opening_amazon()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4180859400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Amazon titleA",
+            "match": {
+              "location": "steps.StepDefination.getting_titleA()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2533585200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "We are opening Google",
+            "match": {
+              "location": "steps.StepDefination.we_are_opening_google()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[name\u003d\u0027jbvdbob\u0027]\"}\n  (Session info: chrome\u003d102.0.5005.63)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027BRIJESH\u0027, ip: \u0027192.168.0.93\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\\Users\\bbtvi\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56726}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 6223002b689cbe2c3903f2d4764557d6\n*** Element info: {Using\u003dname, value\u003djbvdbob}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:284)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\r\n\tat steps.StepDefination.getting_titleG(StepDefination.java:50)\r\n\tat ✽.Google titleG(file:///C:/Selenium_Workspace/BDDLatestLearn/src/main/java/runner/browsers.feature:10)\r\n",
+              "duration": 29847700,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "Google titleG",
+            "match": {
+              "location": "steps.StepDefination.getting_titleG()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Open three websites",
+    "description": "",
+    "id": "open-three-websites",
+    "keyword": "Feature",
+    "uri": "file:src/main/java/runner/browsers.feature",
+    "tags": []
+  }
+]

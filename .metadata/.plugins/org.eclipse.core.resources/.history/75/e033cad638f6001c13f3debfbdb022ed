@@ -1,0 +1,41 @@
+package java1;
+
+public class NumberPalindrom {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		int num =1212;
+		int cnt = 0;
+		int mun = num;
+		int flag =0;
+		while(num!=0) {
+		
+		num =num/10;
+		cnt++;
+		}
+		System.out.println(cnt);
+		while(mun!=0) {
+			while(cnt!=0) {
+				int k = 10^(cnt-1);
+				System.out.println(k);
+				int y =mun/(10^(cnt-1));
+				System.out.println(y);
+		if( y!= mun%10) {
+			flag=1;
+			break;
+		}
+		cnt--;
+			}
+			mun = mun/10;
+		}
+		if(flag==0) {
+			System.out.println("its palindrom");
+		}
+		else {
+			System.out.println("its not palindrom");
+		}
+	}
+
+}

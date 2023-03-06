@@ -1,0 +1,29 @@
+package selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class MultipleBrowsersTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String browser = "Firefox";
+		
+			if (browser.equals("Firefox")) {
+		System.setProperty("webdriver.gecko.driver", "C:\\Seleniumjars\\geckodriver.exe\\");
+		FirefoxDriver driver=new FirefoxDriver(); }
+			else if (browser.equals("chrome")) {
+				System.setProperty("webdriver.chrome.driver","C:\\Seleniumjars\\chromedriver.exe\\");
+				ChromeDriver  driver=new ChromeDriver();
+			}
+		
+		
+		driver.get("https://www.facebook.com/");
+		driver.findElement(By.id("email")).sendKeys("bbtvision@gmail.com");
+		driver.findElementById("pass").sendKeys("Lalo@12345");
+		driver.findElement(By.name("login")).click();
+	}
+
+}

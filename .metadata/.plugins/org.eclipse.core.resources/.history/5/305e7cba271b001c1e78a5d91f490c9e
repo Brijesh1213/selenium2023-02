@@ -1,0 +1,23 @@
+package test;
+
+public class DataTypesTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+   //int
+    int i =10;
+    System.out.println(i);
+    i = i + 20;
+    System.out.println(i);
+    i = i / 5;
+    System.out.println(i);
+    i = i * 8;
+    		System.out.println(i);
+    		System.out.println(i/6);
+    		System.out.println(i);
+    		System.out.println(i++);
+    		char a = 'b';
+    				System.out.println(a);
+	}
+
+}

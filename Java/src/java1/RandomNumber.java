@@ -1,0 +1,29 @@
+package java1;
+
+import java.util.Random;
+
+
+import org.apache.commons.lang3.RandomStringUtils;
+
+public class RandomNumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int length =20;
+		boolean userLetter =true;
+		boolean userNumber =false;
+		
+		
+		//Random random = new Random();
+		for (int x=1; x<=5; x++) {
+			
+			String generatedString =RandomStringUtils.random(length,userLetter,userNumber);
+					
+			System.out.println(generatedString);
+			
+		}
+
+	}
+
+}

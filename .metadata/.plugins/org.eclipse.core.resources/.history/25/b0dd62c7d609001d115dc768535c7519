@@ -1,0 +1,34 @@
+package udemy;
+
+public class ThreadLifeCycleMain{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// Thread life cycle
+		// new state : until program starts its in new state
+		// runnable state : thread is ready to run or already running, Scheduler gives time of CPU to this runnable thread to run,  and each thread pause for some time to give another thread a chance to rune
+		//Waiting state: when thread is waiting or blocked when thread is waiting for input or output operation, waiting thread does not take any CPu operation time, scheduler decides which thread will run
+		// dead state : thread is completely executed, Some unusual event " segmentation fall, or unhandled exception can be reason", Dead thread does not take any CPU cycle
+		
+		
+		
+		//Yield method
+		// assume main and thread (10hr time) and child thread(few second),
+		// so if we want main to yield and wait until child to be executed,
+		//thread schedule know if yeild exist that main will stop and let chil run, here priority will be decided by schedular.
+		// schedular will check on priority bases of time
+		ThreadLifeCycle t = new ThreadLifeCycle();
+		t.start();
+		
+		Thread.yield();
+		for(int i=0; i<5; i++) {
+			
+			System.out.println(Thread.currentThread().getName()+ " Is Running ");
+		}
+		
+		
+
+	}
+
+}

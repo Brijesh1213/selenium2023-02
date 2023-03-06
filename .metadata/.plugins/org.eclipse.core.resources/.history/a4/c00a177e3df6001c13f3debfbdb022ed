@@ -1,0 +1,33 @@
+package java1;
+
+public class NumberPalindrom {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		int num =1221;
+		int mun=num;
+		int reverse =0;
+		int flag =0;
+		
+		
+		while(num!=0) {
+			
+			reverse = reverse*10;
+			reverse = reverse+ num%10;
+			num = num/10;
+		
+			
+		}
+		System.out.println(reverse);
+		
+		if(mun==reverse) {
+			System.out.println("its palindrom");
+		}
+		else {
+			System.out.println("its not palindrom");
+		}
+	}
+
+}

@@ -1,0 +1,33 @@
+package selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class FacebookLoginTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ // test all attribute on facebook email section
+		
+		System.setProperty("webdriver.gecko.driver", "C:\\Seleniumjars\\geckodriver.exe\\");
+	   FirefoxDriver driver = new FirefoxDriver();
+				
+		driver.get("https://www.facebook.com/");
+		// class name- not working
+		//driver.findElement(By.className("inputtext _55r1 _6luy")).sendKeys("vdjbdsv");
+		
+		//cssselector- we have to learn syntax
+		//driver.findElement(By.cssSelector(null))
+		
+		//id-working
+		//driver.findElement(By.id("email")).sendKeys("bsdb");
+		
+		//LinkText only used for links
+		//driver.findElement(By.linkText(null))
+		
+		
+		driver.findElement(By.name("email")).sendKeys("f ehvbe");
+		
+	}
+
+}

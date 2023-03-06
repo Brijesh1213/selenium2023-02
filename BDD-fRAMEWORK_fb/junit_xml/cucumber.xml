@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0.143754">
+    <testcase classname="For tagged hook" name="understanding first Scenario" time="0.14284">
+        <system-out><![CDATA[Given given1 method.........................................................passed
+When when1 method...........................................................passed
+Then then1 method...........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="For tagged hook" name="Scenario2 understanding first" time="0.000535">
+        <system-out><![CDATA[Given given2 method.........................................................passed
+When when2 method...........................................................passed
+Then then2 method...........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="For tagged hook" name="Scenario3 understanding first" time="0.000379">
+        <system-out><![CDATA[Given given3 method.........................................................passed
+When when3 method...........................................................passed
+Then then3 method...........................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

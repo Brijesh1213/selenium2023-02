@@ -1,0 +1,39 @@
+package selenium;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class BackandForwardButtontest {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		System.setProperty("webdriver.gecko.driver", "C:\\Seleniumjars\\geckodriver.exe");
+		FirefoxDriver driver = new FirefoxDriver();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
+		WebDriverWait wait = new WebDriverWait(driver,20); 
+		
+		driver.get("https://www.google.com/?gws_rd=ssl");
+	    driver.findElement(By.linkText("About")).click();
+	   // Thread.sleep(2000);
+	  
+	   System.out.println(driver.getTitle());
+	    
+	   System.out.println("---back to google---");
+	    driver.navigate().back();
+	   // Thread.sleep(2000);
+	    System.out.println(driver.getTitle());
+	    System.out.println("---forward to about---");
+	    driver.navigate().forward();
+	  //  Thread.sleep(2000);
+	    System.out.println(driver.getTitle());
+	    
+	
+
+	}
+
+}

@@ -1,0 +1,32 @@
+package tests;
+
+public class DataType {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+  //int
+		int i = 10;
+		i = 20;
+		System.out.println(i);
+		i= i*2;
+		System.out.println(i);
+		System.out.println(i*2);
+		System.out.println(i);
+		System.out.println(i++);//post increament next will show
+		System.out.println(i);
+		System.out.println(++i);//preincreament
+		
+		//char
+		char a= 'b';
+		System.out.println(a);
+		char c= '5';
+		System.out.println(c);
+		//double
+		
+		
+		
+		double f=10.20;
+		System.out.println(f);
+	}
+
+}

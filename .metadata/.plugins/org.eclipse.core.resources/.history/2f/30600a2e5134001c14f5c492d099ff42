@@ -1,0 +1,36 @@
+package selenium;
+
+import java.util.Iterator;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class MultipleWindowsTest {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.gecko.driver", "C:\\Seleniumjars\\geckodriver.exe\\");
+		FirefoxDriver driver=new FirefoxDriver();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	
+		driver.get("https://www.adidas.ca/en");
+		Thread.sleep(4000);
+		Set<String> allwindows = driver.getWindowHandles();
+		System.out.println(allwindows.size());
+		driver.findElement(By.linkText("also visit")).click();
+		System.out.println(allwindows.size());
+		
+	
+		allwindows= driver.getWindowHandles();
+		Iterator<String> Itr= allwindows.iterator();
+		String mainWindow = Itr.next();
+		String childWindow = Itr.next();
+		
+		
+		driver.switchTo().window(childWindow);
+		driver.getTitle();
+	}
+
+}

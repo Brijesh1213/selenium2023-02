@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;base&apos; to &apos;BDDLatestLearn/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;BDD1&apos;&#x0D;&#x0A;- Destination element: &apos;BDDLatestLearn/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;BDD1/src/test/java/base&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move package" destination="=BDDLatestLearn/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" element1="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;base" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1654363777055" version="1.0"/>
+</session>

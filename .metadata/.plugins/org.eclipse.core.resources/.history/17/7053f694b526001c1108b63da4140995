@@ -1,0 +1,23 @@
+package selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class FacebookSignUpPage {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+System.setProperty("webdriver.gecko.driver", "C:\\Seleniumjars\\geckodriver.exe\\");
+FirefoxDriver driver=new FirefoxDriver();
+driver.get("https://www.facebook.com/");
+
+ driver.findElement(By.linkText("Create New Account")).click();
+ Thread.sleep(2000);
+ driver.findElement(By.name("lastname")).sendKeys("Patel");
+ driver.findElement(By.className("inputtext _58mg _5dba _2ph-")).sendKeys("9056547856");
+driver.findElement(By.name("reg_passwd__")).sendKeys("kjveoebeirei");
+driver.findElement(By.name("websubmit")).click();
+		
+	}
+
+}

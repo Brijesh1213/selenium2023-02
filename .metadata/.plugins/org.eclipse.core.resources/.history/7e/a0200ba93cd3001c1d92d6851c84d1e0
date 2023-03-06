@@ -1,0 +1,22 @@
+package test;
+
+import org.testng.annotations.Test;
+
+import page.HomePage;
+import page.LoginPage;
+
+
+public class EmailTest extends BaseTest {
+	
+	@Test(invocationCount=3)
+	public void sendingEmails() {
+		
+		
+		page.getInstance(LoginPage.class).landOnHomePage();
+		
+		page.getInstance(HomePage.class).sendingEmails();
+		
+	}
+	
+	
+}

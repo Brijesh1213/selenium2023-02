@@ -1,0 +1,28 @@
+package java1;
+
+public class ForWhileLoopIteration {
+	public static void main(String[] args) {
+	int i=1;
+	while(i<=5) {// use initialisation, condition, inreament // condition is false no execution
+		System.out.println("print five times");
+		i++;
+	}
+	System.out.println("--Begin of do while loop--");
+// if condition is false and want to execute atleast for once use do while
+	// condition checked later in loop
+	int j=7;
+	do {// do will print atleast once
+		System.out.println("Print of atleast one time on false condition");
+		j++;
+	 }while(j<=4);//condition is later in the loop// j=6, condition is false//
+	
+	System.out.println("---begin of for loop-------");
+	
+for(int f= 5; f>=1; --f) {// we can write intial,condition and increament all together
+		System.out.println("for loop print five times");
+		
+		
+		
+	}
+}
+}

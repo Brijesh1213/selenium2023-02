@@ -1,0 +1,49 @@
+package selenium;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
+
+public class SeleniumTest {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.gecko.driver", "C:\\Seleniumjars\\geckodriver.exe\\");
+		FirefoxDriver driver=new FirefoxDriver();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+		driver.get("http://automationpractice.com/index.php");
+		
+		WebElement Woman= driver.findElement(By.className("sf-with-ul"));
+		WebElement SummerDress= driver.findElement(By.xpath("(//a[@title='Summer Dresses'])[1]"));
+		
+        Actions hover = new Actions(driver);
+        hover.moveToElement(Woman).build().perform();
+        Thread.sleep(2000);
+       hover.moveToElement(SummerDress).build().perform();
+        SummerDress.click();
+        Thread.sleep(2000);
+ 
+       
+ JavascriptExecutor JSE = (JavascriptExecutor) driver;
+       JSE.executeScript("window.scrollBy(0,400)");
+       Thread.sleep(2000);
+       hover.moveToElement(driver.findElement(By.className("product-image-container"))).build().perform();
+       WebElement QView =  driver.findElement(By.xpath("//ul[@class='product_list grid row']/li[1]/div[1]/div[1]/div[1]/a[2]"));
+       Thread.sleep(2000);
+       QView.click();
+        WebElement sizes = driver.findElement(By.id("group_1"));
+        Select Size = new Select(sizes);
+        Size.selectByValue("1");
+        driver.findElement(By.tagName("Add to cart")).click();
+        
+        
+	}
+
+}

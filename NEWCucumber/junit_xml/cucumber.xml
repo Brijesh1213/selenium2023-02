@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="24.354505">
+    <testcase classname="Form Filling Test" name="Fill Selenium Test Form" time="24.354505">
+        <system-out><![CDATA[Given user is on form page..................................................passed
+Then enter first name "Brijesh".............................................passed
+Then enter lastName"Trivedi" and Select Sex.................................passed
+Then enter years of experience, date and profession.........................passed
+Then Select Flavoours of selenium, continents and commands..................passed
+Then Close All..............................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

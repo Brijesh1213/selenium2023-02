@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Seleniumjars/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Seleniumjars/dom4j-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Seleniumjars/jcommander.jar"/>
+	<classpathentry kind="lib" path="C:/Seleniumjars/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="C:/Seleniumjars/log4j-1.2.14.jar"/>
+	<classpathentry kind="lib" path="C:/Seleniumjars/org.hamcrest.core_1.3.0.v201303031735.jar"/>
+	<classpathentry kind="lib" path="C:/Seleniumjars/poi-3.6-20091214.jar"/>
+	<classpathentry kind="lib" path="C:/Seleniumjars/poi-ooxml-3.6-20091214.jar"/>
+	<classpathentry kind="lib" path="C:/Seleniumjars/poi-ooxml-schemas-3.6-20091214.jar"/>
+	<classpathentry kind="lib" path="C:/Seleniumjars/saxon-8.7.jar"/>
+	<classpathentry kind="lib" path="C:/Seleniumjars/SaxonLiaison.jar"/>
+	<classpathentry kind="lib" path="C:/Seleniumjars/testng-6.14.2.jar"/>
+	<classpathentry kind="lib" path="C:/Seleniumjars/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Seleniumjars/webdrivermanager-5.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Seleniumjars/selenium-server-standalone-3.141.59.jar"/>
+	<classpathentry kind="lib" path="C:/Seleniumjars/selenium-java-4.1.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

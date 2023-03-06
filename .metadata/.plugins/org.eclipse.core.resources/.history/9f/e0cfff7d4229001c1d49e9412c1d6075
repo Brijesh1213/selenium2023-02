@@ -1,0 +1,17 @@
+package selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Faltu {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.gecko.driver","C:\\Seleniumjars\\geckodriver.exe\\");
+		FirefoxDriver  driver=new FirefoxDriver();
+		
+		driver.get("https://www.adidas.ca/en/account-login");
+       driver.findElement(By.xpath("//input[@type='email']")).sendKeys("wec@gmail.com");
+	}
+
+}

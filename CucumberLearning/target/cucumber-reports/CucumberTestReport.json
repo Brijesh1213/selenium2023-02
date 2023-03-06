@@ -1,0 +1,88 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 19,
+        "name": "Free Gmail test scenario",
+        "description": "",
+        "id": "login-feature;free-gmail-test-scenario;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5135144900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User is already on Login Page",
+            "match": {
+              "location": "LearingStepdefination.user_already_On_loginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 62209900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User Enter 12 and User click on Next",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12",
+                  "offset": 11
+                }
+              ],
+              "location": "LearingStepdefination.add_userName_ClickNext(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5295966100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User Enter \"Lalo@123456\" User click on Next",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Lalo@123456",
+                  "offset": 12
+                }
+              ],
+              "location": "LearingStepdefination.add_Password_ClickNext(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 947476200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "close the browser",
+            "match": {
+              "location": "LearingStepdefination.CloseBrowser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "login feature",
+    "description": "",
+    "id": "login-feature",
+    "keyword": "Feature",
+    "uri": "C:/Selenium_Workspace/CucumberLearning/src/main/java/bddFeature/loginlearning.feature"
+  }
+]

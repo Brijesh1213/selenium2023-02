@@ -1,0 +1,24 @@
+package selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class ActionClassTest {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.gecko.driver","C:\\Seleniumjars\\geckodriver.exe\\");
+		FirefoxDriver  driver=new FirefoxDriver();
+		
+		driver.get("https://www.ebay.ca/");
+		WebElement electronic = driver.findElement(By.linkText("Electronics"));
+		Actions builder = new Actions(driver);
+		builder.moveToElement(electronic).build().perform();
+		Thread.sleep(2000);
+		
+		
+	}
+
+}

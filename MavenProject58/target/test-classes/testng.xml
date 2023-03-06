@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="TestSuite">
+ 
+  
+ <listeners>
+  <listener class-name="Listner.listner"/>
+  </listeners>--
+  
+   <test name="Test for tesng extent report">
+    <classes>
+      <class name="tests.Testing1"> </class>
+      <class name="tests.Testing2"></class>
+      <class name="tests.Testing3"></class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

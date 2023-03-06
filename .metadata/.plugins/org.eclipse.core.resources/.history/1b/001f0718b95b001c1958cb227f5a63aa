@@ -1,0 +1,13 @@
+package Utils;
+
+public class ExcelUtiltest {
+	public static void main(String[] args) {
+		
+		String xlpath = "./Data/TestData.xsl.xls";
+		String Sheet ="Brijesh";
+		ExcelUtils excel =new ExcelUtils(xlpath, Sheet);
+		excel.getCellData(1, 1);
+		excel.getrowCount();
+	}
+
+}
